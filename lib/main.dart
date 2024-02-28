@@ -157,8 +157,6 @@ class _MyMarketState extends State<MyMarket> {
   }
 }
 
-
-
 //Pour les produits
 class ProductListPage extends StatefulWidget {
   const ProductListPage({Key? key}) : super(key: key);
@@ -185,79 +183,74 @@ class _ProductListPageState extends State<ProductListPage> {
           for (int i = 0; i < 2; i++)
             Row(
               children: [
-                
                 Expanded(
-          child: GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => DetailsPage()),
-              );
-            },
-            child: Column(
-              children: [
-                Container(
-                  height: 120,
-                  color: const Color.fromARGB(255, 4, 43, 75),
-                ),
-                Container(
-                  color: Colors.white,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Savon"),
-                      SizedBox(height: 8),
-                      Text(
-                        "Lore khjkds jdajksakjmmdn f kajn bknda kjAhbikfs jnviknbsf hjbiffvbc"
-                      ),
-                    ],
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailsPage()),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 120,
+                          color: const Color.fromARGB(255, 4, 43, 75),
+                        ),
+                        Container(
+                          color: Colors.white,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Savon"),
+                              SizedBox(height: 8),
+                              Text(
+                                  "Lore khjkds jdajksakjmmdn f kajn bknda kjAhbikfs jnviknbsf hjbiffvbc"),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
-            ),
-          ),
                 ),
                 SizedBox(width: 10),
-               Expanded(
-          child: GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => DetailsPage()),
-              );
-            },
-            child: Column(
-              children: [
-                Container(
-                  height: 120,
-                  color: const Color.fromARGB(255, 4, 43, 75),
-                ),
-                Container(
-                  color: Colors.white,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text("Savon"),
-                      SizedBox(height: 8),
-                      Text(
-                        "Lore khjkds jdajksakjmmdn f kajn bknda kjAhbikfs jnviknbsf hjbiffvbc"
-                      ),
-                    ],
+                Expanded(
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DetailsPage()),
+                      );
+                    },
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 120,
+                          color: const Color.fromARGB(255, 4, 43, 75),
+                        ),
+                        Container(
+                          color: Colors.white,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text("Savon"),
+                              SizedBox(height: 8),
+                              Text(
+                                  "Lore khjkds jdajksakjmmdn f kajn bknda kjAhbikfs jnviknbsf hjbiffvbc"),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                ),
+                )
               ],
             ),
-          ),)
-              ]
-              ,
-            ),
-              
         ]),
       ),
     );
   }
 }
-
 
 //Detay paj
 class DetailsPage extends StatefulWidget {
@@ -271,9 +264,31 @@ class _DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:AppBar(
-        title:Text("Detay")
-      )
-    );
+        appBar: AppBar(
+          title: Text('Detay'),
+          backgroundColor: Color.fromARGB(255, 33, 201, 243),
+          actions: [
+            IconButton(onPressed: null, icon: Icon(Icons.payment)),
+            Text("PEYE")
+          ],
+        ),
+        body: Padding(
+            padding: EdgeInsets.all(10.0),
+            child: Column(children: [
+              Expanded(
+                child: Container(
+                  height: 50,
+                  color: const Color.fromARGB(255, 4, 43, 75),
+                ),
+              ),
+              SizedBox(height: 10.0),
+              Expanded(
+                child: Container(
+                    height: 50,
+                    color: Colors.white,
+                    child: Text(
+                        "njknvinsvifsnjfosngvokkmlvmsflmfklmgvlondgoldjndaubhfhidfsjnvjfhgjkjfknfvihnvrfnsivnuiwrnvsdinidsndisnudfsrhyeyewiuerihydycnbenbyebcvyueueyyueehhuehehueugudgfuhfeufheyuerwhfhfrvjuefgugyfuewfgyfgettyefueyuhe")),
+              ),
+            ])));
   }
 }
