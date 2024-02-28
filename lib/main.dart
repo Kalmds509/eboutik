@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+//Noms des membres du groupe:
+//Kalancia T MARTIN
+//Wilkens BADIO
+//Samuel OVIDE
+//Ricardo AMAZAN
+//Elischama DORY
 void main() {
   runApp(const MyApp());
 }
