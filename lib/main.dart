@@ -68,7 +68,7 @@ class _MyMarketState extends State<MyMarket> {
                           builder: (context) => ProductListPage()));
                 }
 
-//                 },
+
                 ),
             ListTile(
               leading: Icon(Icons.logout),
@@ -153,7 +153,31 @@ class _MyMarketState extends State<MyMarket> {
           ],
         ),
       ),
+     bottomNavigationBar: BottomNavigationBar(
+      backgroundColor: Color.fromARGB(0, 214, 201, 201),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Accueil',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Recherche',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Paramètres',
+          ),
+        ],
+        
+     )
     );
+
+     
+
+   
+      
+    
   }
 }
 
@@ -206,6 +230,13 @@ class _ProductListPageState extends State<ProductListPage> {
                               SizedBox(height: 8),
                               Text(
                                   "Lore khjkds jdajksakjmmdn f kajn bknda kjAhbikfs jnviknbsf hjbiffvbc"),
+                              Row(
+                                children: [
+                                  Icon(Icons.shopping_bag),
+                                  Icon(Icons.favorite),
+                                ],
+                              ),
+                              SizedBox(height: 20.0)
                             ],
                           ),
                         ),
@@ -237,6 +268,13 @@ class _ProductListPageState extends State<ProductListPage> {
                               SizedBox(height: 8),
                               Text(
                                   "Lore khjkds jdajksakjmmdn f kajn bknda kjAhbikfs jnviknbsf hjbiffvbc"),
+                              Row(
+                                children: [
+                                  Icon(Icons.shopping_bag),
+                                  Icon(Icons.favorite),
+                                ],
+                              ),
+                              SizedBox(height: 20.0)
                             ],
                           ),
                         ),
@@ -248,6 +286,24 @@ class _ProductListPageState extends State<ProductListPage> {
             ),
         ]),
       ),
+       bottomNavigationBar: BottomNavigationBar(
+      backgroundColor: Color.fromARGB(0, 214, 201, 201),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Accueil',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Recherche',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Paramètres',
+          ),
+        ],
+        
+     )
     );
   }
 }
@@ -289,6 +345,27 @@ class _DetailsPageState extends State<DetailsPage> {
                     child: Text(
                         "njknvinsvifsnjfosngvokkmlvmsflmfklmgvlondgoldjndaubhfhidfsjnvjfhgjkjfknfvihnvrfnsivnuiwrnvsdinidsndisnudfsrhyeyewiuerihydycnbenbyebcvyueueyyueehhuehehueugudgfuhfeufheyuerwhfhfrvjuefgugyfuewfgyfgettyefueyuhe")),
               ),
-            ])));
+            ]
+            )
+            ),
+              bottomNavigationBar: BottomNavigationBar(
+      backgroundColor: Color.fromARGB(0, 214, 201, 201),
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Accueil',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Recherche',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Paramètres',
+          ),
+        ],
+        
+     )
+            );
   }
 }
